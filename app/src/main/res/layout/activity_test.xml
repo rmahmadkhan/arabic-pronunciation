@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Nit-eeyah"
+        android:onClick="onClickNiteeyah"
         app:layout_constraintStart_toStartOf="@+id/buttonTarfiyah"
         app:layout_constraintTop_toBottomOf="@+id/buttonTarfiyah" />
 
@@ -33,6 +34,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:text="Halqiyah"
+        android:onClick="onClickHalqiyah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLetter" />
 
@@ -43,6 +45,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:text="Lisaveyah"
+        android:onClick="onClickLisaveyah"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLetter" />
 
@@ -52,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Ghunna"
+        android:onClick="onClickGhunna"
         app:layout_constraintEnd_toEndOf="@+id/buttonLisaveyah"
         app:layout_constraintTop_toBottomOf="@+id/buttonLisaveyah" />
 
@@ -61,6 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Lahatiyah"
+        android:onClick="onClickLahatiyah"
         app:layout_constraintStart_toStartOf="@+id/buttonHalqiyah"
         app:layout_constraintTop_toBottomOf="@+id/buttonHalqiyah" />
 
@@ -70,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Tarfiyah"
+        android:onClick="onClickTarfiyah"
         app:layout_constraintStart_toStartOf="@+id/buttonLahatiyah"
         app:layout_constraintTop_toBottomOf="@+id/buttonLahatiyah" />
 
@@ -79,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Shafaweeyah"
+        android:onClick="onClickShafaweeyah"
         app:layout_constraintEnd_toEndOf="@+id/buttonGhunna"
         app:layout_constraintTop_toBottomOf="@+id/buttonGhunna" />
 
@@ -88,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Thalqeeyah"
+        android:onClick="onClickThalqeeyah"
         app:layout_constraintEnd_toEndOf="@+id/buttonShafaweeyah"
         app:layout_constraintTop_toBottomOf="@+id/buttonShafaweeyah" />
 
@@ -97,6 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Asleeyah"
+        android:onClick="onClickAsleeyah"
         app:layout_constraintStart_toStartOf="@+id/buttonNiteeyah"
         app:layout_constraintTop_toBottomOf="@+id/buttonNiteeyah" />
 
@@ -105,7 +114,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Shajariyah_Haafiyah"
+        android:text="Shajariyah Haafiyah"
+        android:onClick="onClickShajariyahHaafiyah"
         app:layout_constraintEnd_toEndOf="@+id/buttonThalqeeyah"
         app:layout_constraintTop_toBottomOf="@+id/buttonThalqeeyah" />
 
@@ -138,6 +148,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginBottom="50dp"
         android:text="Next"
+        android:onClick="onClickNext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -148,6 +159,7 @@
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="50dp"
         android:text="Finish"
+        android:onClick="onClickFinish"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
