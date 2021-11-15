@@ -3,6 +3,7 @@ package dev.ahmadkhan.arabic_pronunciation;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -174,5 +175,8 @@ public class TestActivity extends AppCompatActivity {
     }
 
     public void onClickFinish(View view) {
+        Intent intent = new Intent(TestActivity.this, ScoreActivity.class);
+        intent.putExtra("Score",score);
+        startActivity(intent);
     }
 }
