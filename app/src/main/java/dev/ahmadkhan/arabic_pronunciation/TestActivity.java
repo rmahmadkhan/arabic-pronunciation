@@ -30,6 +30,11 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
+        textViewLetter = findViewById(R.id.textViewLetter);
+        textViewAnswer = findViewById(R.id.textViewAnswer);
+        textViewScore = findViewById(R.id.textViewScore);
+
         textViewLetter.setText(letters[index++]);
     }
 
