@@ -25,7 +25,7 @@
         android:layout_marginTop="50dp"
         android:paddingStart="50dp"
         android:paddingEnd="50dp"
-        android:text="An app to help students practice and test their learning of makhārij al-ḥurūf (emission points of Arabic letters)."
+        android:text="An app to help students test their learning of makhārij al-ḥurūf (emission points of Arabic letters)."
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -33,25 +33,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
     <Button
-        android:id="@+id/buttonPractice"
+        android:id="@+id/buttonTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Practice"
-        android:onClick="navigateToPractice"
+        android:text="Test your learning"
+        android:onClick="onClickTest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
 
     <Button
-        android:id="@+id/buttonTest"
+        android:id="@+id/buttonAboutMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Test"
-        android:onClick="navigateToTest"
+        android:layout_marginBottom="50dp"
+        android:onClick="onClickAboutMe"
+        android:text="About Me"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPractice" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

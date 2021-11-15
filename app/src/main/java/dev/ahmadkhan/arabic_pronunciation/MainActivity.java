@@ -14,13 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void navigateToPractice(View view) {
-        Intent intent = new Intent(MainActivity.this, PracticeActivity.class);
+    public void onClickTest(View view) {
+        Intent intent = new Intent(MainActivity.this, TestActivity.class);
         startActivity(intent);
     }
 
-    public void navigateToTest(View view) {
-        Intent intent = new Intent(MainActivity.this, TestActivity.class);
-        startActivity(intent);
+    public void onClickAboutMe(View view) {
     }
 }
