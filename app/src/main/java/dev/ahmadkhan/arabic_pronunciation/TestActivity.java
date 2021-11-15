@@ -29,42 +29,144 @@ public class TestActivity extends AppCompatActivity {
     }
 
     public void onClickNiteeyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Niteeyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickHalqiyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Halqiyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickLisaveyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Lisaveyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickGhunna(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Ghunna")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickLahatiyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Lahatiyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickTarfiyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Tarfiyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickShafaweeyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Shafaweeyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickThalqeeyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Thalqeeyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickAsleeyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("Asleeyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickShajariyahHaafiyah(View view) {
+        String ep = emissionPoints[index-1];
+        if(ep.equals("ShajariyahHaafiyah")){
+            score+=1;
+            textViewAnswer.setText("Correct");
+            textViewAnswer.setTextColor(0xFF4cbb17);
+        }
+        else{
+            textViewAnswer.setText("Wrong");
+            textViewAnswer.setTextColor(0xFFFF0000);
+        }
     }
 
     public void onClickNext(View view) {
         textViewScore.setText(Integer.toString(score));
         if(index > 29){
             textViewLetter.setText("Questions completed");
+            textViewAnswer.setText("");
         }
         else{
             textViewLetter.setText(letters[index++]);
+            textViewAnswer.setText("");
         }
     }
 
