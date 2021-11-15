@@ -1,9 +1,12 @@
 package dev.ahmadkhan.arabic_pronunciation;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -21,11 +24,11 @@ public class TestActivity extends AppCompatActivity {
     TextView textViewAnswer;
     TextView textViewScore;
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        textViewLetter.setText(letters[index++]);
     }
 
     public void onClickNiteeyah(View view) {
@@ -162,12 +165,11 @@ public class TestActivity extends AppCompatActivity {
         textViewScore.setText(Integer.toString(score));
         if(index > 29){
             textViewLetter.setText("Questions completed");
-            textViewAnswer.setText("");
         }
         else{
             textViewLetter.setText(letters[index++]);
-            textViewAnswer.setText("");
         }
+        textViewAnswer.setText("");
     }
 
     public void onClickFinish(View view) {
