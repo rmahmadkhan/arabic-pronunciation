@@ -29,12 +29,13 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+        textViewLetter.setText(letters[index++]);
     }
 
     public void onClickNiteeyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Niteeyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -47,7 +48,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickHalqiyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Halqiyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -60,7 +61,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickLisaveyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Lisaveyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -73,7 +74,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickGhunna(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Ghunna")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -86,7 +87,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickLahatiyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Lahatiyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -99,7 +100,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickTarfiyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Tarfiyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -112,7 +113,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickShafaweeyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Shafaweeyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -125,7 +126,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickThalqeeyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Thalqeeyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -138,7 +139,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickAsleeyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("Asleeyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -151,7 +152,7 @@ public class TestActivity extends AppCompatActivity {
     public void onClickShajariyahHaafiyah(View view) {
         String ep = emissionPoints[index-1];
         if(ep.equals("ShajariyahHaafiyah")){
-            score+=1;
+            score++;
             textViewAnswer.setText("Correct");
             textViewAnswer.setTextColor(0xFF4cbb17);
         }
@@ -163,11 +164,11 @@ public class TestActivity extends AppCompatActivity {
 
     public void onClickNext(View view) {
         textViewScore.setText(Integer.toString(score));
-        if(index > 29){
-            textViewLetter.setText("Questions completed");
+        if(index < 30){
+            textViewLetter.setText(letters[index++]);
         }
         else{
-            textViewLetter.setText(letters[index++]);
+            textViewLetter.setText("Questions completed");
         }
         textViewAnswer.setText("");
     }
